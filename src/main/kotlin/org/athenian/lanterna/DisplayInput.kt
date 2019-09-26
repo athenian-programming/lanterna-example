@@ -37,11 +37,9 @@ fun main() {
             }
     }
 
-    thread {
-        while (true) {
-            print(">> ")
-            val s = readLine() ?: ""
-            queue.put(s)
-        }
+    while (true) {
+        print(">> ")
+        val s = readLine() ?: ""
+        queue.put(s)
     }
 }
