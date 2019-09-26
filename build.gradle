@@ -7,6 +7,8 @@ plugins {
 group 'org.athenian'
 version '1.0-SNAPSHOT'
 
+def lanternaVersion = '3.0.1'
+
 sourceCompatibility = 1.8
 
 repositories {
@@ -15,7 +17,7 @@ repositories {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-    implementation "com.googlecode.lanterna:lanterna:3.0.1"
+    implementation "com.googlecode.lanterna:lanterna:${lanternaVersion}"
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
